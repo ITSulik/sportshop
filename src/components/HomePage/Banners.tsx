@@ -1,7 +1,6 @@
-import shoe from "../assets/img/banner_img_01.jpg";
-import flex from "../assets/img/flexwear.png";
-import power from "../assets/img/powergrip.png";
-import React from "react";
+import shoe from "../../assets/img/banner_img_01.jpg";
+import flex from "../../assets/img/flexwear.png";
+import power from "../../assets/img/powergrip.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

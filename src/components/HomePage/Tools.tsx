@@ -1,7 +1,6 @@
-import "../index.css";
-import torch from "../assets/img/feature_prod_01.jpg";
-import Wpro from "../assets/img/feature_prod_02.jpg";
-import Camera from "../assets/img/feature_prod_03.jpg";
+import torch from "../../assets/img/feature_prod_01.jpg";
+import Wpro from "../../assets/img/feature_prod_02.jpg";
+import Camera from "../../assets/img/feature_prod_03.jpg";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
 function Tools() {

@@ -1,21 +1,23 @@
-import { useState } from "react";
 import "./App.css";
-import TopNav from "./components/TopNav";
-import MainNav from "./components/MainNav";
-import SearchModal from "./components/Search";
-import HeroCarousel from "./components/Banners";
-import TopSelect from "./components/TopSelect";
-import Tools from "./components/Tools";
-import Footer from "./components/Footer";
+import { useState } from "react";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+import MainNav from "./components/NavBar_Footer_Search/MainNav";
+import TopNav from "./components/NavBar_Footer_Search/TopNav";
+import Footer from "./components/NavBar_Footer_Search/Footer";
+import SearchModal from "./components/NavBar_Footer_Search/Search";
+import Contacting from "./components/Contact";
+
 function App() {
     const [searchOpen, setSearchOpen] = useState(false);
     return (
         <>
             <TopNav />
             <MainNav />
-            <HeroCarousel />
-            <TopSelect />
-            <Tools />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contact" element={<Contacting />} />
+            </Routes>
             <Footer />
 
             <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />

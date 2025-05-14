@@ -1,7 +1,6 @@
-import watch from "../assets/img/category_img_01.jpg";
-import shoe from "../assets/img/category_img_02.jpg";
-import glass from "../assets/img/category_img_03.jpg";
-import "../index.css";
+import watch from "../../assets/img/category_img_01.jpg";
+import shoe from "../../assets/img/category_img_02.jpg";
+import glass from "../../assets/img/category_img_03.jpg";
 
 function TopSelect() {
     return (
