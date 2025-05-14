@@ -24,8 +24,8 @@ const HeroCarousel = () => {
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         nextArrow: <Arrow direction="right" />,
         prevArrow: <Arrow direction="left" />,
         customPaging: () => (
@@ -64,15 +64,16 @@ const HeroCarousel = () => {
         <div className="relative w-full bg-gray-100 px-4 py-8">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
-                    <div key={index} className="relative w-full">
-                        {/* Discount în colțul dreapta sus al slide-ului */}
-                        <span className="absolute top-4 right-4 z-20 rounded bg-red-500 px-3 py-1 text-xs font-semibold text-white shadow">
+                    <div key={index} className="relative w-full px-4">
+                        {/* Discount */}
+                        <span className="absolute top-4 right-4 z-20 rounded bg-red-500 px-4 py-1 text-xs font-semibold text-white shadow">
                             {slide.discount}
                         </span>
 
-                        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between p-6 lg:flex-row">
+                        {/* Slide content */}
+                        <div className="mx-auto flex max-w-5xl flex-col-reverse items-center justify-between p-6 md:flex-row">
                             {/* Text */}
-                            <div className="text-left lg:w-1/2">
+                            <div className="px-4 text-left lg:w-1/2">
                                 <h1 className="mb-2 text-3xl font-bold text-green-600">{slide.title}</h1>
                                 {slide.subtitle && (
                                     <h3 className="mb-2 text-xl font-semibold text-gray-800">{slide.subtitle}</h3>
@@ -87,8 +88,8 @@ const HeroCarousel = () => {
                             </div>
 
                             {/* Imagine */}
-                            <div className="lg:w-1/2">
-                                <img src={slide.image} alt={slide.title} className="h-auto w-full object-contain" />
+                            <div className="px-4 sm:w-1/5 md:w-1/3 lg:w-1/2">
+                                <img src={slide.image} alt={slide.title} className="h-auto w-full" />
                             </div>
                         </div>
                     </div>

@@ -36,7 +36,7 @@ function Contact() {
 
     return (
         <div className="bg-white">
-            <div className="bg-gray-100 py-10">
+            <div className="bg-gray-100 px-5 py-10">
                 <div className="mx-auto text-center">
                     <h1 className="mb-4 text-5xl font-light">Pagina de Contact</h1>
                     <p className="text-gray-700">

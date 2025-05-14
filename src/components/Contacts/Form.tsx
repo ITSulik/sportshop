@@ -1,6 +1,6 @@
 function Form() {
     return (
-        <div className="bg-white py-10">
+        <div className="bg-white p-10">
             <form className="mx-auto max-w-3xl space-y-6">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <div>

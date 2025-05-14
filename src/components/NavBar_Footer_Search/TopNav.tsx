@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaEnvelope, FaPhone 
 
 function TopNav() {
     return (
-        <div className="flex justify-center bg-slate-800 py-2 text-sm text-white lg:block">
+        <div className="hidden justify-center bg-slate-800 py-2 text-sm text-white lg:flex">
             <div className="container mx-auto flex items-center justify-between px-4">
                 <div className="flex items-center space-x-4 text-white">
                     <FaEnvelope className="mx-2 h-4 w-4" />
