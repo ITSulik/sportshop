@@ -24,8 +24,8 @@ const HeroCarousel = () => {
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         nextArrow: <Arrow direction="right" />,
         prevArrow: <Arrow direction="left" />,
         customPaging: () => (
@@ -65,14 +65,11 @@ const HeroCarousel = () => {
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index} className="relative w-full px-4">
-                        {/* Discount */}
                         <span className="absolute top-4 right-4 z-20 rounded bg-red-500 px-4 py-1 text-xs font-semibold text-white shadow">
                             {slide.discount}
                         </span>
 
-                        {/* Slide content */}
                         <div className="mx-auto flex max-w-5xl flex-col-reverse items-center justify-between p-6 md:flex-row">
-                            {/* Text */}
                             <div className="px-4 text-left lg:w-1/2">
                                 <h1 className="mb-2 text-3xl font-bold text-green-600">{slide.title}</h1>
                                 {slide.subtitle && (
@@ -87,7 +84,6 @@ const HeroCarousel = () => {
                                 </a>
                             </div>
 
-                            {/* Imagine */}
                             <div className="px-4 sm:w-1/5 md:w-1/3 lg:w-1/2">
                                 <img src={slide.image} alt={slide.title} className="h-auto w-full" />
                             </div>

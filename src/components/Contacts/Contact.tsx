@@ -6,7 +6,7 @@ function Contact() {
     useEffect(() => {
         const container = L.DomUtil.get("mapid");
         if (container != null) {
-            container._leaflet_id = null; // 💣 forțăm Leaflet să uite instanța precedentă
+            container._leaflet_id = null;
         }
 
         const map = L.map("mapid").setView([-23.013104, -43.394365], 13);
@@ -28,7 +28,6 @@ function Contact() {
         map.scrollWheelZoom.disable();
         map.touchZoom.disable();
 
-        // Curățare când componenta se demontează
         return () => {
             map.remove();
         };

@@ -2,10 +2,9 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaTwitte
 
 export default function Footer() {
     return (
-        <footer className="bottom-0 mt-5 w-full bg-gray-800 text-white">
+        <footer className="bottom-0 w-full bg-gray-800 text-white">
             <div className="container mx-auto px-20 py-10">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                    {/* Col 1 */}
                     <div>
                         <h2 className="border-b border-gray-700 pb-3 text-3xl text-green-400">Fit cu Stil</h2>
                         <ul className="text-m mt-4 space-y-4 font-light">
@@ -28,7 +27,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Col 2 */}
                     <div>
                         <h2 className="border-b border-gray-700 pb-3 text-4xl">Produse</h2>
                         <ul className="text-m mt-4 space-y-2">
@@ -50,7 +48,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Col 3 */}
                     <div>
                         <h2 className="border-b border-gray-700 pb-3 text-3xl">Informații suplimentare</h2>
                         <ul className="text-m mt-4 space-y-2 font-light">
@@ -67,7 +64,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Social & Subscribe */}
                 <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-gray-700 pt-6 md:flex-row">
                     <ul className="flex gap-4">
                         {[
@@ -95,7 +91,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* Bottom Bar */}
             <div className="bg-slate-900 py-3">
                 <div className="container mx-auto px-5 py-2">
                     <p>
