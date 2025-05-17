@@ -27,7 +27,7 @@ function MainNav() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="#" className="transition hover:text-green-500">
+                            <Link to="/shop" className="transition hover:text-green-500">
                                 Shop
                             </Link>
                         </li>
@@ -79,7 +79,7 @@ function MainNav() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="transition hover:text-green-500">
+                        <Link to="/shop" className="transition hover:text-green-500">
                             Shop
                         </Link>
                     </li>
