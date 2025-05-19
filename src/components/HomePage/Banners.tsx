@@ -34,7 +34,7 @@ const HeroCarousel = () => {
         nextArrow: <Arrow direction="right" onClick={() => {}} />,
         prevArrow: <Arrow direction="left" onClick={() => {}} />,
         customPaging: () => (
-            <div className="mx-1 h-1 w-6 bg-green-500 opacity-50 transition-opacity duration-300 hover:opacity-100"></div>
+            <div className="mx-1 h-3 w-3 rounded bg-green-500 opacity-50 transition-opacity duration-300 hover:opacity-100 md:h-1 md:w-6"></div>
         ),
         appendDots: (dots: any[]) => (
             <div>

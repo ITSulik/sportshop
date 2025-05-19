@@ -5,8 +5,8 @@ import glass from "../../assets/img/category_img_03.jpg";
 function TopSelect() {
     return (
         <div className="px-4 py-10 text-center">
-            <h1 className="mb-10 text-5xl font-light">Top Selecții pentru un Stil Activ</h1>
-            <p className="mx-auto mb-12 max-w-3xl text-gray-600">
+            <h1 className="mb-10 text-2xl font-light md:text-4xl lg:text-5xl">Top Selecții pentru un Stil Activ</h1>
+            <p className="mx-auto mb-12 max-w-xl text-gray-600 sm:text-sm md:max-w-2xl lg:max-w-3xl lg:text-xl">
                 Am selectat cele mai îndrăgite produse care îmbină performanța cu stilul. Fie că ești în sală, pe stradă
                 sau în natură – fii activ, dar rămâi tu însuți.
             </p>
@@ -15,7 +15,7 @@ function TopSelect() {
                     <img
                         src={watch}
                         alt="Watch"
-                        className="mb-4 h-90 w-90 rounded-full border-2 border-gray-200 object-cover"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Watches</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">
@@ -27,7 +27,7 @@ function TopSelect() {
                     <img
                         src={shoe}
                         alt="Shoe"
-                        className="mb-4 h-90 w-90 rounded-full border-2 border-gray-200 object-cover"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Shoes</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">
@@ -39,7 +39,7 @@ function TopSelect() {
                     <img
                         src={glass}
                         alt="Glasses"
-                        className="mb-4 h-90 w-90 rounded-full border-2 border-gray-200 object-cover"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Accessories</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">
