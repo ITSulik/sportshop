@@ -9,17 +9,17 @@ function Categories() {
     };
 
     return (
-        <div className="">
+        <div className="mx-auto block max-w-sm px-4">
             {/* Sidebar Categorii */}
             <div>
                 <div className="flex flex-col justify-between gap-6">
-                    <h1 className="text-4xl font-light">Categorii</h1>
+                    <h1 className="text-2xl font-light lg:text-3xl">Categorii</h1>
                     <ul className="space-y-6">
                         {/* Gen */}
                         <li>
                             <button
                                 onClick={() => toggleIndex(0)}
-                                className="flex w-full cursor-pointer items-center justify-between text-2xl font-light hover:text-gray-600 focus:outline-none"
+                                className="flex w-full cursor-pointer items-center justify-between text-xl font-light hover:text-gray-600 focus:outline-none lg:text-2xl"
                             >
                                 Gen
                                 <FaChevronCircleDown
@@ -50,7 +50,7 @@ function Categories() {
                         <li>
                             <button
                                 onClick={() => toggleIndex(1)}
-                                className="flex w-full cursor-pointer items-center justify-between text-2xl font-light hover:text-gray-600 focus:outline-none"
+                                className="flex w-full cursor-pointer items-center justify-between text-xl font-light hover:text-gray-600 focus:outline-none lg:text-2xl"
                             >
                                 Vânzări
                                 <FaChevronCircleDown
@@ -81,7 +81,7 @@ function Categories() {
                         <li>
                             <button
                                 onClick={() => toggleIndex(2)}
-                                className="flex w-full cursor-pointer items-center justify-between text-2xl font-light hover:text-gray-600 focus:outline-none"
+                                className="flex w-full cursor-pointer items-center justify-between text-xl font-light hover:text-gray-600 focus:outline-none lg:text-2xl"
                             >
                                 Produse
                                 <FaChevronCircleDown

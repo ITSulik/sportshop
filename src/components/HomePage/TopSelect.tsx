@@ -15,7 +15,7 @@ function TopSelect() {
                     <img
                         src={watch}
                         alt="Watch"
-                        className="md: mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover md:h-70 md:w-70 lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Watches</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">
@@ -27,7 +27,7 @@ function TopSelect() {
                     <img
                         src={shoe}
                         alt="Shoe"
-                        className="md: mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover md:h-70 md:w-70 lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Shoes</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">
@@ -39,7 +39,7 @@ function TopSelect() {
                     <img
                         src={glass}
                         alt="Glasses"
-                        className="md:0 mb-4 h-50 w-5 rounded-full border-2 border-gray-200 object-cover lg:h-90 lg:w-90"
+                        className="mb-4 h-50 w-50 rounded-full border-2 border-gray-200 object-cover md:h-70 md:w-70 lg:h-90 lg:w-90"
                     />
                     <h2 className="mb-2 text-lg font-semibold">Accessories</h2>
                     <a href="#" className="rounded bg-green-600 px-4 py-2 text-white transition hover:bg-green-700">

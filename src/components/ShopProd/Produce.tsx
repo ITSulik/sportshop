@@ -20,19 +20,17 @@ type ArrowProps = {
     onClick?: () => void;
 };
 
-const NextArrow = (props: ArrowProps) => {
-    const { onClick } = props;
+const NextArrow = ({ onClick }: ArrowProps) => {
     return (
-        <button className="z-10" onClick={onClick}>
+        <button className="absolute top-1/2 -right-8 z-10 -translate-y-1/2 rounded-full p-2" onClick={onClick}>
             <FaChevronRight className="text-2xl text-black" />
         </button>
     );
 };
 
-const PrevArrow = (props: ArrowProps) => {
-    const { className, onClick } = props;
+const PrevArrow = ({ onClick }: ArrowProps) => {
     return (
-        <button className={`${className} z-10`} onClick={onClick}>
+        <button className="absolute top-1/2 -left-8 z-10 -translate-y-1/2 rounded-full p-2" onClick={onClick}>
             <FaChevronLeft className="text-2xl text-black" />
         </button>
     );
@@ -69,8 +67,32 @@ const ProductDetails = () => {
         speed: 800,
         slidesToShow: 3,
         slidesToScroll: 3,
+        arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+        ],
     };
 
     const product = {
@@ -94,17 +116,17 @@ const ProductDetails = () => {
     };
 
     return (
-        <section className="flex justify-center bg-gray-100 py-10">
+        <section className="bg-gray-100 py-10">
             <div className="container mx-auto flex flex-col justify-center gap-10 px-4 lg:flex-row">
                 {/* Left side - Images */}
-                <div className="lg:w-1/3">
+                <div className="md:w-1/2 lg:w-1/3">
                     <div className="rounded-lg bg-white shadow">
                         <img src={mainImage} alt="Product Main" className="h-auto w-full rounded-md object-cover" />
                     </div>
-                    <div className="mt-4">
+                    <div className="relative mt-4 max-w-xl">
                         <Slider {...settings} arrows={true}>
                             {thumbnails.map((thumb, index) => (
-                                <div key={index} className="px-2">
+                                <div key={index} className="px-5">
                                     <img
                                         src={thumb}
                                         alt={`Thumb ${index}`}

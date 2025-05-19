@@ -4,7 +4,7 @@ import Categories from "./Shop/Categories";
 function ShopList() {
     return (
         <>
-            <div className="mx-auto flex justify-center px-4 py-8">
+            <div className="mx-auto block justify-center px-4 py-8">
                 <div className="flex flex-col gap-8 lg:flex-row">
                     {/* Sidebar categorii */}
                     <aside className="w-full lg:w-1/4">
@@ -33,7 +33,7 @@ function ShopList() {
                                 </li>
                             </ul>
 
-                            <select className="mt-4 w-md rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none md:mt-0">
+                            <select className="mt-4 w-sm rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none md:mt-0 lg:w-md">
                                 <option>Sortează</option>
                                 <option>A - Z</option>
                                 <option>Articol</option>
