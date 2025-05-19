@@ -12,7 +12,7 @@ function Article() {
         slidesToScroll: 4,
         arrows: false,
         customPaging: () => <div className="h-10 w-10 scale-200 rounded-full bg-gray-400"></div>,
-        appendDots: (dots) => (
+        appendDots: (dots: any[]) => (
             <div className="m-4 flex justify-center">
                 <ul className="space-x-2">
                     {dots.map((dot, index) => (

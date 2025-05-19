@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronRight, FaChevronLeft, FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,7 +15,12 @@ import ps7 from "../../assets/img/product_single_07.jpg";
 import ps8 from "../../assets/img/product_single_08.jpg";
 import ps9 from "../../assets/img/product_single_09.jpg";
 
-const NextArrow = (props: any) => {
+type ArrowProps = {
+    className?: string;
+    onClick?: () => void;
+};
+
+const NextArrow = (props: ArrowProps) => {
     const { onClick } = props;
     return (
         <button className="z-10" onClick={onClick}>
@@ -23,7 +29,7 @@ const NextArrow = (props: any) => {
     );
 };
 
-const PrevArrow = (props: any) => {
+const PrevArrow = (props: ArrowProps) => {
     const { className, onClick } = props;
     return (
         <button className={`${className} z-10`} onClick={onClick}>

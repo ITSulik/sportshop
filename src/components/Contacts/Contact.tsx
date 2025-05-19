@@ -6,7 +6,7 @@ function Contact() {
     useEffect(() => {
         const container = L.DomUtil.get("mapid");
         if (container != null) {
-            container._leaflet_id = null;
+            (container as any)._leaflet_id = null;
         }
 
         const map = L.map("mapid").setView([-23.013104, -43.394365], 13);

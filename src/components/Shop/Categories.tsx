@@ -2,9 +2,9 @@ import { useState } from "react";
 import { FaChevronCircleDown } from "react-icons/fa";
 
 function Categories() {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    const toggleIndex = (index) => {
+    const toggleIndex = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 

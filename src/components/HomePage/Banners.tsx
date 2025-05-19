@@ -6,7 +6,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Arrow = ({ direction, onClick }) => (
+type ArrowProps = {
+    direction: "left" | "right";
+    onClick: () => void;
+};
+
+const Arrow = ({ direction, onClick }: ArrowProps) => (
     <button
         onClick={onClick}
         className={`absolute top-1/2 z-10 -translate-y-1/2 text-3xl text-green-500 ${
@@ -26,12 +31,12 @@ const HeroCarousel = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
-        nextArrow: <Arrow direction="right" />,
-        prevArrow: <Arrow direction="left" />,
+        nextArrow: <Arrow direction="right" onClick={() => {}} />,
+        prevArrow: <Arrow direction="left" onClick={() => {}} />,
         customPaging: () => (
             <div className="mx-1 h-1 w-6 bg-green-500 opacity-50 transition-opacity duration-300 hover:opacity-100"></div>
         ),
-        appendDots: (dots) => (
+        appendDots: (dots: any[]) => (
             <div>
                 <ul className="mt-6 flex justify-center">{dots}</ul>
             </div>
