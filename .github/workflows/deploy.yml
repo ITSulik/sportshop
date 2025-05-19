@@ -10,8 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@latest
-
+              uses: actions/checkout@v4
             - name: Install dependencies
               run: npm install
 
@@ -19,7 +18,7 @@ jobs:
               run: npm run build
 
             - name: Deploy to Netlify
-              uses: nwtgck/actions-netlify@latest
+              uses: nwtgck/actions-netlify@v2.0
               with:
                   publish-dir: ./dist
                   production-deploy: true
