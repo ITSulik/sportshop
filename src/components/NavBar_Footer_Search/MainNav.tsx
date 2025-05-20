@@ -9,7 +9,7 @@ function MainNav() {
 
     return (
         <>
-            <nav className="drop-shadow-black-200 w-full bg-white drop-shadow-2xl">
+            <nav className="drop-shadow-black-200 z-10 w-full bg-white drop-shadow-2xl">
                 <div className="container mx-auto flex items-center justify-between px-5 py-5">
                     <Link to="/" className="text-5xl font-medium text-green-600">
                         Fit cu Stil
