@@ -31,8 +31,8 @@ export default function BrandsSlick() {
         <section className="bg-slate-200 py-20">
             <div className="mx-auto max-w-4xl px-4">
                 <div className="mb-10 text-center">
-                    <h1 className="mb-4 text-5xl font-light">Brandurile noastre</h1>
-                    <p className="max-w-4xl text-gray-700">
+                    <h1 className="mb-4 text-3xl font-light md:text-4xl lg:text-5xl">Brandurile noastre</h1>
+                    <p className="md:text-md max-w-4xl px-10 text-center text-sm text-gray-700 lg:text-lg">
                         Colaborăm cu cele mai de încredere branduri din domeniul sportului și modei pentru a-ți oferi
                         produse de calitate, stil și performanță. Fiecare brand este ales cu grijă pentru a-ți completa
                         stilul activ și modern.

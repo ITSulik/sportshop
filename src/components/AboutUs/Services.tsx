@@ -5,8 +5,8 @@ function Services() {
         <section className="bg-white py-12">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-2xl pt-10 pb-6 text-center">
-                    <h1 className="mb-4 text-5xl font-light">Serviciile Noastre</h1>
-                    <p className="text-gray-700">
+                    <h1 className="mb-4 text-3xl font-light md:text-4xl lg:text-5xl">Serviciile Noastre</h1>
+                    <p className="text-gray-700 md:text-[10pt] lg:text-[12pt] xl:text-[14pt]">
                         La Fit cu Stil, ne dedicăm să-ți oferim o experiență de shopping fără stres – de la livrare
                         rapidă și retururi ușoare, până la oferte exclusive și asistență 24/7. Totul ca tu să fii mereu
                         în formă, cu stil.

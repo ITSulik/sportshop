@@ -6,15 +6,15 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 function Tools() {
     return (
         <>
-            <div className="my-15 bg-slate-100 pb-5">
+            <div className="mt-15 bg-slate-100 pb-20">
                 <div className="mt-15 px-4 py-15 text-center">
                     <h1 className="mb-4 text-5xl font-light">Echipat pentru Performanță</h1>
                     <p className="text-1xl mx-auto max-w-3xl text-gray-600">
                         🎯 „Fă mișcare. Arată bine. Trăiește Fit.”
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-10">
-                    <div className="rounded-4 flex w-[420px] flex-col items-center border-2 border-gray-200 bg-white">
+                <div className="flex flex-wrap justify-center gap-10 px-10">
+                    <div className="rounded-4 flex h-min flex-col items-center border-2 border-gray-200 bg-white sm:w-[50px] md:w-[240px] lg:w-[300px] xl:w-[420px]">
                         <img src={torch} alt="Watch" />
                         <div className="p-3">
                             <ul className="flex list-none items-center justify-between py-2">
@@ -37,7 +37,7 @@ function Tools() {
                             <p className="bottom-1 py-4 text-gray-500">Reviews (24)</p>
                         </div>
                     </div>
-                    <div className="flex w-[420px] flex-col items-center border-2 border-gray-200 bg-white">
+                    <div className="rounded-4 flex h-min flex-col items-center border-2 border-gray-200 bg-white sm:w-[50px] md:w-[240px] lg:w-[300px] xl:w-[420px]">
                         <img src={Wpro} alt="Watch" />
                         <div className="p-3">
                             <ul className="flex list-none items-center justify-between py-2">
@@ -60,7 +60,7 @@ function Tools() {
                             <p className="bottom-1 py-4 text-gray-500">Reviews (48)</p>
                         </div>
                     </div>
-                    <div className="flex w-[420px] flex-col items-center border-2 border-gray-200 bg-white">
+                    <div className="rounded-4 flex h-min flex-col items-center border-2 border-gray-200 bg-white sm:w-[50px] md:w-[240px] lg:w-[300px] xl:w-[420px]">
                         <img src={Camera} alt="Watch" />
                         <div className="p-3">
                             <ul className="flex list-none items-center justify-between py-2">

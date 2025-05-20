@@ -8,24 +8,26 @@ function Top() {
             <div className="container mx-auto flex flex-col items-center gap-10 px-8 lg:flex-row">
                 <div className="space-y-6 text-white lg:w-2/3">
                     <div>
-                        <h1 className="mb-2 text-4xl font-semibold">1. Scurtă Introducere</h1>
-                        <p className="text-[16pt] font-light">
+                        <h1 className="mb-2 text-2xl font-semibold md:text-3xl lg:text-4xl">1. Scurtă Introducere</h1>
+                        <p className="font-light md:text-[12pt] xl:text-[16pt]">
                             „La Fit cu Stil, credem că sportul nu este doar o activitate fizică, ci un mod de viață. Am
                             creat acest magazin online pentru a inspira oamenii să se simtă bine în pielea lor, să fie
                             activi și... să o facă cu stil!”
                         </p>
                     </div>
                     <div>
-                        <h1 className="mb-2 text-4xl font-semibold">2. Misiunea Noastră</h1>
-                        <p className="text-[16pt] font-light">
+                        <h1 className="mb-2 text-2xl font-semibold md:text-3xl lg:text-4xl">2. Misiunea Noastră</h1>
+                        <p className="font-light md:text-[12pt] xl:text-[16pt]">
                             „Misiunea noastră este să oferim produse sportive de calitate, care combină confortul,
                             funcționalitatea și designul modern. Fiecare articol din colecția noastră este ales cu grijă
                             pentru a te susține în drumul tău spre o viață mai sănătoasă.”
                         </p>
                     </div>
                     <div>
-                        <h1 className="mb-2 text-4xl font-semibold">3. De ce să alegi Fit cu Stil?</h1>
-                        <ul className="space-y-2 text-[16pt] font-light">
+                        <h1 className="mb-2 text-2xl font-semibold md:text-3xl lg:text-4xl">
+                            3. De ce să alegi Fit cu Stil?
+                        </h1>
+                        <ul className="space-y-2 font-light md:text-[12pt] xl:text-[16pt]">
                             <li className="flex items-start gap-2">
                                 <FaCheckCircle className="mt-1 text-white" />
                                 <span>Produse testate și recomandate de sportivi</span>
