@@ -33,7 +33,7 @@ function ShopList() {
                                 </li>
                             </ul>
 
-                            <select className="mt-4 w-sm rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none md:mt-0 lg:w-md">
+                            <select className="mt-4 w-min rounded-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-300 focus:outline-none sm:w-sm md:mt-0 lg:w-md xl:mr-10">
                                 <option>Sortează</option>
                                 <option>A - Z</option>
                                 <option>Articol</option>

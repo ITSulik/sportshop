@@ -9,7 +9,7 @@ function Categories() {
     };
 
     return (
-        <div className="mx-auto block max-w-sm px-4">
+        <div className="mx-auto w-full px-4">
             {/* Sidebar Categorii */}
             <div>
                 <div className="flex flex-col justify-between gap-6">

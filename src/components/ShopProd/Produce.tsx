@@ -119,14 +119,14 @@ const ProductDetails = () => {
         <section className="bg-gray-100 py-10">
             <div className="container mx-auto flex flex-col justify-center gap-10 px-4 lg:flex-row">
                 {/* Left side - Images */}
-                <div className="md:w-1/2 lg:w-1/3">
+                <div className="md:w-1/1 lg:w-1/3">
                     <div className="rounded-lg bg-white shadow">
                         <img src={mainImage} alt="Product Main" className="h-auto w-full rounded-md object-cover" />
                     </div>
-                    <div className="relative mt-4 max-w-xl">
+                    <div className="relative mt-4">
                         <Slider {...settings} arrows={true}>
                             {thumbnails.map((thumb, index) => (
-                                <div key={index} className="px-5">
+                                <div key={index} className="px-2">
                                     <img
                                         src={thumb}
                                         alt={`Thumb ${index}`}
