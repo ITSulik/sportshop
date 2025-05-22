@@ -78,13 +78,7 @@ const ProductDetails = () => {
                     slidesToScroll: 3,
                 },
             },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                },
-            },
+
             {
                 breakpoint: 480,
                 settings: {
@@ -117,20 +111,20 @@ const ProductDetails = () => {
 
     return (
         <section className="bg-gray-100 py-10">
-            <div className="container mx-auto flex flex-col justify-center gap-10 px-4 lg:flex-row">
+            <div className="container mx-auto flex flex-col justify-center gap-2 px-4 md:gap-10 lg:flex-row">
                 {/* Left side - Images */}
-                <div className="md:w-1/1 lg:w-1/3">
+                <div className="mx-auto w-1/1 md:w-1/2 lg:w-1/3">
                     <div className="rounded-lg bg-white shadow">
                         <img src={mainImage} alt="Product Main" className="h-auto w-full rounded-md object-cover" />
                     </div>
-                    <div className="relative mt-4">
+                    <div className="relative m-4">
                         <Slider {...settings} arrows={true}>
                             {thumbnails.map((thumb, index) => (
                                 <div key={index} className="px-2">
                                     <img
                                         src={thumb}
                                         alt={`Thumb ${index}`}
-                                        className="cursor-pointer rounded-md transition hover:scale-105"
+                                        className="cursor-pointer rounded-md transition hover:border"
                                         onClick={() => setMainImage(thumb)}
                                     />
                                 </div>
@@ -140,7 +134,7 @@ const ProductDetails = () => {
                 </div>
 
                 {/* Right side - Info */}
-                <div className="w-full rounded-md bg-white p-6 shadow">
+                <div className="rounded-md bg-white p-6 shadow lg:w-full">
                     <h1 className="mb-2 text-3xl font-light">{product.title}</h1>
                     <p className="mb-4 text-2xl font-light">${product.price.toFixed(2)}</p>
                     <div className="mb-2 flex items-center gap-2">

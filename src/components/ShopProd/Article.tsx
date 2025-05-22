@@ -57,14 +57,14 @@ function Article() {
     };
 
     return (
-        <section className="py-10">
-            <div className="container mx-auto px-4 py-10">
-                <div className="mb-4">
+        <section className="pt-8 pb-10">
+            <div className="container mx-auto px-4 pb-5">
+                <div className="mb-10">
                     <h4 className="text-left text-2xl font-semibold">Related Products</h4>
                 </div>
                 <Slider {...settings}>
                     {products.map((item, index) => (
-                        <div key={index} className="max-w-2xl px-2">
+                        <div key={index} className="mb-5 max-w-2xl px-2">
                             <Card
                                 title={item.title}
                                 price={item.price}

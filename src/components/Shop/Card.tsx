@@ -13,7 +13,7 @@ export default function Card({ title, image, price, rating, sizes }: Props) {
         <div className="group relative max-w-sm overflow-hidden rounded border border-gray-200 bg-white shadow">
             <div className="group relative">
                 <img
-                    className="object-fit h-min w-full border-b border-gray-200 group-hover:opacity-80"
+                    className="object-fit w-fit border-b border-gray-200 group-hover:opacity-80"
                     src={image}
                     alt={title}
                 />

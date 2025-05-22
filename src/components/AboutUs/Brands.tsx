@@ -28,18 +28,18 @@ export default function BrandsSlick() {
     };
 
     return (
-        <section className="bg-slate-200 px-10 py-10">
-            <div className="mx-auto px-4">
+        <section className="bg-slate-200 px-4 py-10">
+            <div className="mx-auto max-w-6xl">
                 <div className="mb-10 text-center">
                     <h1 className="mb-4 text-2xl font-light sm:text-3xl md:text-4xl lg:text-5xl">Brandurile noastre</h1>
-                    <p className="md:text-md px-5 text-center text-xs text-gray-700 sm:text-sm lg:px-20 lg:text-lg">
+                    <p className="md:text-md text-xs text-gray-700 sm:text-sm lg:px-20 lg:text-lg">
                         Colaborăm cu cele mai de încredere branduri din domeniul sportului și modei pentru a-ți oferi
                         produse de calitate, stil și performanță. Fiecare brand este ales cu grijă pentru a-ți completa
                         stilul activ și modern.
                     </p>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center px-4 sm:px-10">
                     <button
                         onClick={() => sliderRef.current?.slickPrev()}
                         className="text-gray-400 transition-colors hover:text-green-600"
@@ -47,11 +47,15 @@ export default function BrandsSlick() {
                         <FaChevronLeft size={24} />
                     </button>
 
-                    <div className="w-1/2 lg:w-full">
+                    <div className="w-full max-w-md sm:w-4/5 sm:max-w-4xl">
                         <Slider ref={sliderRef} {...settings}>
                             {brandLogos.map((logo, index) => (
-                                <div key={index} className="flex justify-evenly">
-                                    <img src={logo} alt={`Brand ${index}`} className="object-fit h-16 grayscale" />
+                                <div key={index} className="flex justify-center">
+                                    <img
+                                        src={logo}
+                                        alt={`Brand ${index}`}
+                                        className="h-16 min-w-[80px] translate-x-20 grayscale sm:translate-x-25"
+                                    />
                                 </div>
                             ))}
                         </Slider>
