@@ -2,7 +2,7 @@
 import { products } from "./Products";
 import Card from "./Card";
 
-const List = () => {
+function List() {
     return (
         <>
             <div className="grid grid-cols-2 gap-10 p-5 md:grid-cols-3 xl:grid-cols-3">
@@ -35,6 +35,6 @@ const List = () => {
             </div>
         </>
     );
-};
+}
 
 export default List;

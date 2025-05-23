@@ -14,7 +14,7 @@ function ShopList() {
                     {/* Conținut principal */}
                     <main className="w-full lg:w-3/4">
                         {/* Filtru și sortare */}
-                        <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div className="mb-6 flex flex-col px-5 md:flex-row md:items-center md:justify-between">
                             <ul className="flex space-x-6 text-2xl font-light">
                                 <li>
                                     <a href="#" className="text-gray-900 hover:text-green-400">
