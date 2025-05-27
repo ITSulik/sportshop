@@ -49,3 +49,23 @@ jobs:
                   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
                   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
               timeout-minutes: 1
+    docker:
+        needs: build
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Log in to GitHub Container Registry
+              uses: docker/login-action@v3
+              with:
+                  registry: ghcr.io
+                  username: ${{ github.actor }}
+                  password: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Build Docker image
+              run: docker build . -f Dockerfile -t ghcr.io/itsulik/sportshop:latest
+
+            - name: Push Docker image
+              run: docker push ghcr.io/itsulik/sportshop:latest
