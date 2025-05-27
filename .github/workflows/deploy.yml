@@ -1,4 +1,4 @@
-name: Build and Deploy to Netlify
+name: Build, Create Docker Image, Deploy to Netlify and Create Release
 
 on:
     push:
@@ -8,7 +8,7 @@ on:
         branches: ["main"]
 
 permissions:
-    contents: read
+    contents: write
     packages: write
 
 jobs:
